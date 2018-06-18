@@ -2,14 +2,14 @@
 
 import logging, getopt, ast
 import os, sys
-import exrex # https://github.com/asciimoo/exrex
+#import exrex # https://github.com/asciimoo/exrex
 from Classes.description import Description
 from Classes.parser import Parser
 from Classes.test_executor import TestExecutor
 import signal
 
 debug = False
-program_name = "  Yet Another (Tiny Rest) Testing Framework  "
+program_name = "  REST (in peace) fuzzer  "
 program_end = "  END OF TEST  "
 size = 90
 
