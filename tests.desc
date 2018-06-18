@@ -1,0 +1,26 @@
+
+@Add Bug Report Group
+[247c7e70-1258-11e6-8c7f-68f72812e540]
+Name = "Add Bug Test 1"
+Service Location = "http://54.77.56.88/croft/service.php/BugReport"
+Method = "POST"
+Expected Result = "{"returnValue":"","returnCode":"NO_ERROR_CODE"}"
+Description = "Test if a registered user can add a bug"
+Parameters = [ 'username':'thedude__5de48831-7cca-4aa2-9d2d-b7f7ffd23c4a','password':'11111111','logs':'This is a most beautiful log.. or not' ]
+
+[789fc494-1258-11e6-9452-68f72812e540]
+Name = "Add Bug Test 2"
+Service Location = "http://54.77.56.88/croft/service.php/BugReport"
+Method = "POST"
+Expected Result = "{"returnValue":"","returnCode":"ERROR_010_005"}"
+Description = "Test what happens if badly formatted requests are sent, password variable spelled pasoord"
+Parameters = [ 'username':'thedude__5de48831-7cca-4aa2-9d2d-b7f7ffd23c4a','pasord':'11111111','logs':'This is a most beautiful log.. or not' ]
+
+[a83b3f76-1258-11e6-a558-68f72812e540]
+Name = "Add Bug Test 3"
+Service Location = "http://54.77.56.88/croft/service.php/BugReport"
+Method = "POST"
+Expected Result = "{"returnValue":"","returnCode":"ERROR_010_005"}"
+Description = "Test what happens if someone wants to add bugs, which is not authenticated"
+Parameters = [ 'username':'thedude__5de48831-7cca-4aa2-9d2d-b7f7ffd23c4a','password':'1111111','logs':'This is a most beautiful log.. or not' ]
+
